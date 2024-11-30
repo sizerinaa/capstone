@@ -40,6 +40,72 @@
           <div><button class="nav-bar__button">Patterns</button></div>
         </div>
       </section>
+
+      <section id="design-a-driveway">
+        <h2>YOUR CUSTOMIZED TILESET</h2>
+        <div class="driveway-img">
+          <img
+            src="https://th.bing.com/th/id/OIP.je6n41edd5mw-EG9OXG4owHaE8?rs=1&pid=ImgDetMain"
+            alt="driveway"
+          />
+        </div>
+        <h3>
+          like what you see? upload an image to see it in your own driveway.
+        </h3>
+        <div class="design-a-driveway__buttons">
+          <div><button class="nav-bar__button">upload</button></div>
+        </div>
+      </section>
+
+     <section>
+          <style>
+            #getData {
+              width: 250px;
+              height: 200px;
+              padding: 10px;
+              border: 1px solid #4f4d4d;
+              margin-bottom: 48px;
+            }
+          </style>
+          <script>
+            function allowDrop(even) {
+              even.preventDefault();
+            }
+      
+            function drag(even) {
+              even.dataTransfer.setData("text", even.target.id);
+            }
+      
+            function drop(even) {
+              even.preventDefault();
+              var fetchData = even.dataTransfer.getData("text");
+              even.target.appendChild(document.getElementById(fetchData));
+            }
+          </script>
+        </head>
+      
+        <body>
+          <h2 class="customized-tileset">Your customized tileset</h2>
+          <div id="getData" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <!-- <h3>Drag & Drop to upload file</h3> -->
+          </div>
+          <br />
+          <img
+            id="dragData"
+            src="https://th.bing.com/th/id/OIP.je6n41edd5mw-EG9OXG4owHaE8?rs=1&pid=ImgDetMain"
+            draggable="true"
+            ondragstart="drag(event)"
+            width="250"
+            height="200"
+          />
+
+          <div><button class="dragData__button">upload</button></div>
+
+    </section>
+
+
+      
+
     </main>
   </body>
 </html>

@@ -1,9 +1,9 @@
 * {
     padding: 0px;
     margin: 0 auto;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: Arial, Helvetica, sans-serif;
-}
+} 
 
 /* NAV BAR  */
 
@@ -47,3 +47,21 @@ li {
     align-items: center;
     
 }
+
+.customized-tileset {
+    margin: 48px 0 48px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dragData__button {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    background-color: #7ba43a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 48px;
+}
+
